@@ -1,0 +1,19 @@
+<owl-carousel-o [options]="customOptions" class="banner-carousel">
+    <ng-container *ngFor="let slide of slides">
+        <ng-template carouselSlide>
+            <div class="slide-item">
+                <div class="image-layer" [style.backgroundImage]="'url(' + slide.img + ')'"></div>
+                <div class="auto-container">
+                    <div class="content-box">
+                        <div class="content">
+                            <div class="inner">
+                                <h3> {{ slide.caption }}</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </ng-template>
+    </ng-container>
+</owl-carousel-o>
+<h1>home page wrk</h1>
